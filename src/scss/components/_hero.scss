@@ -1,7 +1,7 @@
 .hero {
     overflow: hidden;
-    background: url("../images/bg-tablet-pattern.svg") no-repeat right -180px bottom 0;
-    background-size: 320px;
+    background: url("../images/bg-intro-mobile.svg") no-repeat center top -68px;
+    background-size: contain;
     padding-bottom: 5.5rem;
 }
 
@@ -11,15 +11,12 @@
     margin-bottom: 0.5rem;
 }
 
-.hero__image {
-    img {
-        display: block;
-        max-width: 580px;
-        width: 100%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.hero__image img {
+    display: block;
+    max-width: 580px;
+    width: 100%;
+    height: auto;
+    margin: -35.5% auto 0;
 }
 
 .hero__body {
