@@ -12,7 +12,7 @@ body {
     color: $gray;
     background: url("../images/bg-tablet-pattern.svg") no-repeat right -140px top -120px $white;
     background-size: 460px;
-    min-width: 375px;
+    min-width: 320px;
     min-height: 100vh;
     position: relative;
 }
@@ -22,12 +22,6 @@ h1, h2, h3, h4 {
     line-height: 1.3;
     margin-top: 0;
     color: $dark-blue;
-}
-
-h2 {
-    font-size: 2rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
 }
 
 p {
@@ -59,19 +53,6 @@ p {
     border: 0;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.max-w-prose {
-    max-width: 40ch;
-}
-
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 @media (min-width: 992px) {
     body {
         background-position: right -150px top -160px;
@@ -91,8 +72,8 @@ p {
         padding-right: 15px;
     }
 
-    .col-full {
-        flex: none;
-        max-width: none;
+    .col-3 {
+        flex: 1 0 25%;
+        max-width: 25%;
     }
 }
