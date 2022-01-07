@@ -82,16 +82,16 @@
 
 @media (min-width: 991px) {
     .header__navbar {
-        padding-top: 3.125rem;
-        padding-bottom: 3.125rem;
+        min-height: 5rem;
     }
 
     .header__logo {
-        margin-top: 8px;
-        flex: 1 0 146px;
-        max-width: 146px;
+        flex: 1 0 139px;
+        max-width: 139px;
+        margin-right: 1.5rem;
 
         img {
+            margin-top: 4px;
             height: auto;
         }
     }
@@ -111,19 +111,37 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        margin-top: 3px;
-        margin-left: -7px;
+        margin-top: -2px;
     }
 
     .header__nav-link {
-        font-size: 0.75rem;
-        padding: 1rem;
-        color: $dark-blue;
+        font-size: 0.875rem;
+        line-height: 5rem;
+        padding: 0 0.9375rem;
+        color: $grayish-blue;
+        position: relative;
         transition: color 0.15s;
+
+        &::after {
+            content: '';
+            display: block;
+            width: calc(100% - 2rem);
+            height: 0.25rem;
+            position: absolute;
+            bottom: 0;
+            left: 0.9375rem;
+            background: linear-gradient(to right, $lime-green, $bright-cyan);
+            transform: scale3d(0, 0, 0);
+            transition: transform 0.15s;
+        }
 
         &:hover,
         &:focus {
-            color: $gray;
+            color: $dark-blue;
+
+            &::after {
+                transform: scale3d(1, 1, 1);
+            }
         }
     }
 
