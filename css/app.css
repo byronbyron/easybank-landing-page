@@ -348,11 +348,10 @@ template {
 body {
   font-family: "Public Sans", sans-serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.7;
   color: #9095a7;
-  background: url("../images/bg-tablet-pattern.svg") no-repeat right -140px top -120px white;
-  background-size: 460px;
+  background-color: white;
   min-width: 320px;
   min-height: 100vh;
   position: relative;
