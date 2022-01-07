@@ -6,17 +6,21 @@
 }
 
 .hero__title {
-    font-size: 2.25rem;
+    font-size: 2.375rem;
     line-height: 1.2;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.hero__image img {
-    display: block;
-    max-width: 580px;
-    width: 100%;
-    height: auto;
-    margin: -35.5% auto 0;
+.hero__image {
+    margin-bottom: 2.5rem;
+
+    img {
+        display: block;
+        max-width: 580px;
+        width: 100%;
+        height: auto;
+        margin: -35.5% auto 0;
+    }
 }
 
 .hero__body {
@@ -24,10 +28,11 @@
 }
 
 .hero__text {
-    font-size: 1rem;
+    font-size: 0.875rem;
     line-height: 1.7;
     color: $gray;
     margin-bottom: 1.75rem;
+    max-width: 320px;
 }
 
 @media (min-width: 768px) {

@@ -1,6 +1,7 @@
 .header {
     position: relative;
     z-index: 10;
+    background-color: $white;
 }
 
 .header__navbar {
@@ -26,7 +27,7 @@
     top: 5.5rem;
     left: 0;
     width: 100%;
-    padding: 1.125rem;
+    padding: 1.25rem;
     background: $white;
     border-radius: 0.25rem;
     visibility: hidden;
@@ -59,6 +60,24 @@
 
 .header__cta {
     display: none;
+}
+
+.menu-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, $dark-blue, transparent 667px);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+.menu .menu-overlay {
+    visibility: visible;
+    opacity: 1;
 }
 
 @media (min-width: 991px) {
@@ -110,5 +129,9 @@
 
     .header__cta {
         display: block;
+    }
+
+    .menu-overlay {
+        display: none;
     }
 }
