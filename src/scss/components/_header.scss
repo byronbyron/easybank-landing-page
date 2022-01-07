@@ -81,6 +81,13 @@
 }
 
 @media (min-width: 992px) {
+    .header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
     .header__navbar {
         min-height: 5rem;
     }
